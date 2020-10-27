@@ -12,8 +12,13 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <jsp:useBean id="student" type="lendle.courses.network.simplemvc.Student" scope="request"/>
-        <h1>Hello!<jsp:getProperty name="student" property="name"/></h1>
+        <%
+            Student student=(Student)request.getAttribute("student");
+        %>
+        <%--<jsp:useBean id="student" type="lendle.courses.network.simplemvc.Student" scope="request"/>--%>
+        <h1>Hello!<%=student.getName()%>
+            <%--<jsp:getProperty name="student" property="name"/>--%>
+        </h1>
         繼續努力!!
     </body>
 </html>
