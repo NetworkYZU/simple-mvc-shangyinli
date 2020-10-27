@@ -8,7 +8,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <form method="post" action="ShowScore">
+        <form method="post" action="score">
             Student ID:<input type="text" name="id"/><br/>
             <input type="submit"/>
         </form>
